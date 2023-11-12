@@ -16,7 +16,7 @@ app = Client(
 s = Session()
 pattern: str = r"(http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\\(\\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+)"
 DEV = InlineKeyboardMarkup([
-    [InlineKeyboardButton("- المطور -", user_id=6673736816)]
+    [InlineKeyboardButton("- المطور -", user_id=1831414453)]
 ])
 
 @app.on_message(filters.command("start"))
@@ -50,11 +50,11 @@ def views(tgurl: str) -> bool:
     params: dict = {
         "jack" : tgurl
     }
-    url: str = "https://ava-tar.online/api/kro" # API owner: @uu4uo
+    url: str = "https://ava-tar.online/api/kro" # API owner: @EEGEZ
     response: Response = s.get(url, params=params).json()
     return True if "تم الرشق بنجاح" in response["text"] else False
 
 
-# 𝗪𝗥𝗜𝗧𝗧𝗘𝗡 𝗕𝗬 : @BENN_DEV, @UP_UO 
-# 𝗦𝗢𝗨𝗥𝗖𝗘 : @BENfiles , @UI_XB 
+# 𝗪𝗥𝗜𝗧𝗧𝗘𝗡 𝗕𝗬 : @ALMA1NY, @K_F_P 
+# 𝗦𝗢𝗨𝗥𝗖𝗘 : @EEGEZ , @EEGEZ 
 if __name__ == "__main__": app.run()
